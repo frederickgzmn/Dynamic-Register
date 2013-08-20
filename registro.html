@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Registro de usuarios</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link type="text/css" href="javascript/css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="javascript/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="javascript/js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript" src="javascript/registro.js"></script>
+	</head>
+	<body>
+		<center>
+			<form name='formulario_registro' id='formulario_registro' method="POST" action="procesos.php" enctype="multipart/form-data">
+				<table style='background: #FFA500; -moz-border-radius: 6px 6px 6px 6px;'>
+					<tr>
+						<td class="val" name='val_nomb' id='val_nomb' title='incorrecto'>Nombre: </td><td><input maxlength='25' type='text' name='nombre' id='nombre'> *</td>
+					</tr>
+					<tr>
+						<td class="val" name='val_apell' id='val_apell' title='incorrecto'>Apellidos: </td><td><input  maxlength='100' type='text' name='apell' id='apell'>  *</td>
+					</tr>
+					<tr>
+						<td class="val" name='val_fec' id='val_fec' title='incorrecto'>Fecha de nacimiento: </td><td><input readonly="readonly" maxlength='25' type='text' name='fec_nac' id='fec_nac'>  *</td>
+					</tr>			
+					<tr>
+						<td class="val" name='val_mail' id='val_mail' title='incorrecto'>Email: </td><td><input type='text' name='email' id='email'>  *</td>
+					</tr>			
+					<tr>
+						<td name='val_pic' id='val_pic' title='incorrecto'>Foto: </td><td><input size='6' type='file' name='archivo_f' id='archivo_f'> </td>
+					</tr>			
+					<tr>
+						<td class="val" name='val_usu' id='val_usu' title='incorrecto'>Nombre Usuario: </td><td><input maxlength="30" type='text' name='codigo_usu' id='codigo_usu'>  *</td>
+					</tr>
+					
+					<tr>
+						<td class="val" name='val_pwd' id='val_pwd' title='incorrecto'>Contrase&ntilde;a: </td><td><input type='password' name='passwd' id='passwd'>  *</td>
+					</tr>
+					
+					<tr>
+						<td>Repita la contrase&ntilde;a: </td><td><input type='password' name='passwd_again' id='passwd_again'></td>
+					</tr>
+					
+					<tr  style="text-align: center;">
+						<td colspan="3"><img src='imagen.php'></td>
+					</tr>
+
+					<tr>
+						<td class="val" name='val_catp' id='val_catp' title='incorrecto'>Introduzca el texto de la imagen: </td><td><input type='text' name='captcha' id='captcha'>  *</td>
+					</tr>
+					
+					<tr>
+						<td class="val" name='condictd' id='condictd' title='incorrecto'>Aceptar los terminos y condiciones: </td><td><input type='checkbox' name='condic' id='condic'>  *</td>
+					</tr>
+					
+					<tr  style="text-align: center;">
+						<td colspan="3" style='font-size: 12px;'>Los campos con * son obligatorios</td>
+					</tr>
+				</table>
+				
+			</form>
+					<button name='registrar' id='registrar'>Registrar</button>
+		</center>
+	</body>
+</html>
