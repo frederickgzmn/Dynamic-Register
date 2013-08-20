@@ -15,6 +15,7 @@
 # Archivo de la DB............. Archivo: DB MySQL/pruebas.sql			 							# 
 #####################################################################################################
 
+
 session_start();
 require_once("class/conexion.class.php");
 //Leyendo archivo html
